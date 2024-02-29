@@ -1,8 +1,9 @@
 import { ReactNode } from "react";
 import DashboardNav from "../components/DashboardNav";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
-import { redirect } from "next/dist/server/api-utils";
+// import { redirect } from "next/dist/server/api-utils";
 import prisma from "../lib/db";
+import { redirect } from "next/navigation";
 
 async function getData({ email, id, firstName, lastName }) {
   const user = await prisma.user.findUnique({
