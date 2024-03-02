@@ -3,6 +3,7 @@ import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { redirect } from "next/navigation";
 import prisma from "../lib/db";
 import { unstable_noStore as noStore } from "next/cache";
+import { stripe } from "@/lib/stripe";
 import DashboardNav from "../components/DashboardNav";
 
 async function getData({
