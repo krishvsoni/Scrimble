@@ -10,10 +10,6 @@ export const navItems = [
 ];
 
 export default function DashboardNav() {
-  if (typeof window === 'undefined') {
-    return null;
-  }
-
   const pathname = usePathname();
 
   return (
