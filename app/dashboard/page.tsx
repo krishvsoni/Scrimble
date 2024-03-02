@@ -53,7 +53,7 @@ export default async function DashboardPage() {
       },
     });
 
-    revalidatePath("/dasboard");
+    revalidatePath("/dashboard");
   }
 
   return (
@@ -66,7 +66,7 @@ export default async function DashboardPage() {
           </p>
         </div>
 
-        {data?.subscriptions?.status === "active" ? (
+        {data?.subscriptions?.status === 'active' ? (
           <Button asChild>
             <Link href="/dashboard/new">Create a new Note</Link>
           </Button>
@@ -84,14 +84,14 @@ export default async function DashboardPage() {
           </div>
 
           <h2 className="mt-6 text-xl font-semibold">
-            You don't have any notes created
+            You don&apos;t have any notes created
           </h2>
           <p className="mb-8 mt-2 text-center text-sm leading-6 text-muted-foreground max-w-sm mx-auto">
-            You currently don't have any notes. Please create some so that you
+            You currently don&apos;t have any notes. Please create some so that you
             can see them right here.
           </p>
 
-          {data?.subscriptions?.status === "active" ? (
+          {data?.subscriptions?.status === 'active' ? (
             <Button asChild>
               <Link href="/dashboard/new">Create a new Note</Link>
             </Button>
@@ -113,8 +113,8 @@ export default async function DashboardPage() {
                   {item.title}
                 </h2>
                 <p>
-                  {new Intl.DateTimeFormat("en-US", {
-                    dateStyle: "full",
+                  {new Intl.DateTimeFormat('en-US', {
+                    dateStyle: 'full',
                   }).format(new Date(item.createdAt))}
                 </p>
               </div>
