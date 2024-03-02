@@ -10,7 +10,7 @@ import { unstable_noStore as noStore } from "next/cache";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AuthGlide",
+  title: "Simply Notes",
   description: "",
 };
 
@@ -40,7 +40,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${data?.colorScheme ?? "theme-violet"}`}
+        className={`${inter.className} ${data?.colorScheme ?? "theme-yellow"}`}
       >
         <ThemeProvider
           attribute="class"

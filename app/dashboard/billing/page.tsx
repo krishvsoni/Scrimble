@@ -12,8 +12,8 @@ import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 
 import { redirect } from "next/navigation";
 import { unstable_noStore as noStore } from "next/cache";
-import { StripeSubscriptionCreationButton } from "@/app/components/Submitbuttons";
-import { getStripeSession } from "@/lib/stripe";
+import { StripePortal, StripeSubscriptionCreationButton } from "@/app/components/Submitbuttons";
+import { getStripeSession, stripe } from "@/lib/stripe";
 
 const featureItems = [
     { name: "something something" },
