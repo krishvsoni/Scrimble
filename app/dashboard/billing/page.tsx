@@ -84,7 +84,7 @@ export default async function BillingPage() {
       return_url:
         process.env.NODE_ENV === "production"
           ? (process.env.PRODUCTION_URL as string)
-          : "http://localhost:3000/dashboard",
+          : "https://scrimble.vercel.app/dashboard",
     });
 
     return redirect(session.url);
@@ -132,7 +132,7 @@ export default async function BillingPage() {
           </div>
 
           <div className="mt-4 flex items-baseline text-6xl font-extrabold">
-            $30 <span className="ml-1 text-2xl text-muted-foreground">/mo</span>
+            30 INR <span className="ml-1 text-2xl text-muted-foreground">/mo</span>
           </div>
           <p className="mt-5 text-lg text-muted-foreground">
             Write as many notes as you want for $30 a Month
