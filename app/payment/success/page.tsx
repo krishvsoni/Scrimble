@@ -18,8 +18,8 @@ export default function SuccessRoute() {
             </h3>
             <div className="mt-2">
               <p className="text-sm text-muted-foreground">
-                please check your email for
-                the update
+                Congrats on your subscription, please check your email for
+                further instructions
               </p>
             </div>
 

@@ -19,9 +19,9 @@ import {
 } from "@/components/ui/select";
 import prisma from "@/app/lib/db";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
-import { SubmitButton } from "@/components/ui/Submitbuttons";
+
+import { SubmitButton } from "@/app/components/Submitbuttons";
 import { revalidatePath, unstable_noStore as noStore } from "next/cache";
-import { Button } from "@/components/ui/button";
 
 async function getData(userId: string) {
   noStore();
@@ -129,7 +129,7 @@ export default async function SettingPage() {
           </CardContent>
 
           <CardFooter>
-            <SubmitButton/>
+            <SubmitButton />
           </CardFooter>
         </form>
       </Card>
