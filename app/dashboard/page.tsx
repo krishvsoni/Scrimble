@@ -61,9 +61,9 @@ export default async function DashboardPage() {
       <div className="flex items-center justify-between px-2">
         <div className="grid gap-1">
           <h1 className="text-3xl md:text-4xl">Your Notes</h1>
-          <p className="text-lg text-muted-foreground">
-            
-          </p>
+          {/* <p className="text-lg text-muted-foreground">
+            Your Notes Listed
+          </p> */}
         </div>
   
         <Button asChild>
@@ -77,9 +77,9 @@ export default async function DashboardPage() {
             <File className="w-10 h-10 text-primary" />
           </div>
   
-          <h2 className="mt-6 text-xl font-semibold">
+          {/* <h2 className="mt-6 text-xl font-semibold">
             You don't have any notes created
-          </h2>
+          </h2> */}
           <p className="mb-8 mt-2 text-center text-sm leading-6 text-muted-foreground max-w-sm mx-auto">
             
           </p>
