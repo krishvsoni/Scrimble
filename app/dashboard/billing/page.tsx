@@ -18,7 +18,7 @@ import {
 import { unstable_noStore as noStore } from "next/cache";
 
 const featureItems = [
-  { name: " Premium Coming Soon !! " }
+  { name: " Premium Plan Announcing  Soon !! " }
   // { name: " something something" },
   // { name: "something something" },
   // { name: "something something" },
