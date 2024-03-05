@@ -62,7 +62,7 @@ export default async function DashboardPage() {
         <div className="grid gap-1">
           <h1 className="text-3xl md:text-4xl">Your Notes</h1>
           <p className="text-lg text-muted-foreground">
-            Here you can see and create new notes
+            
           </p>
         </div>
   
@@ -78,11 +78,10 @@ export default async function DashboardPage() {
           </div>
   
           <h2 className="mt-6 text-xl font-semibold">
-            You dont have any notes created
+            You don't have any notes created
           </h2>
           <p className="mb-8 mt-2 text-center text-sm leading-6 text-muted-foreground max-w-sm mx-auto">
-            You currently dont have any notes. please create some so that you
-            can see them right here.
+            
           </p>
   
           <Button asChild>
