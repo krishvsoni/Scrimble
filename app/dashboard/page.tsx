@@ -29,7 +29,7 @@ async function getData(userId: string) {
 
       Subscription: {
         select: {
-          status: true,
+          status: false,
         },
       },
     },
