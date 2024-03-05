@@ -29,7 +29,7 @@ async function getData(userId: string) {
 
       Subscription: {
         select: {
-          status: false,
+          status: true,
         },
       },
     },
@@ -65,24 +65,18 @@ export default async function DashboardPage() {
             Here you can see and create new notes
           </p>
         </div>
-
-        {data?.Subscription?.status === "active" ? (
-          <Button asChild>
-            <Link href="/dashboard/new">Create a new Note</Link>
-          </Button>
-        ) : (
-          <Button asChild>
-            <Link href="/dashboard/billing">Create a new Note</Link>
-          </Button>
-        )}
+  
+        <Button asChild>
+          <Link href="/dashboard/new">Create a new Note</Link>
+        </Button>
       </div>
-
+  
       {data?.Notes.length == 0 ? (
         <div className="flex min-h-[400px] flex-col items-center justify-center rounded-md border border-dashed p-8 text-center animate-in fade-in-50">
           <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
             <File className="w-10 h-10 text-primary" />
           </div>
-
+  
           <h2 className="mt-6 text-xl font-semibold">
             You dont have any notes created
           </h2>
@@ -90,16 +84,10 @@ export default async function DashboardPage() {
             You currently dont have any notes. please create some so that you
             can see them right here.
           </p>
-
-          {data?.Subscription?.status === "active" ? (
-            <Button asChild>
-              <Link href="/dashboard/new">Create a new Note</Link>
-            </Button>
-          ) : (
-            <Button asChild>
-              <Link href="/dashboard/billing">Create a new Note</Link>
-            </Button>
-          )}
+  
+          <Button asChild>
+            <Link href="/dashboard/new">Create a new Note</Link>
+          </Button>
         </div>
       ) : (
         <div className="flex flex-col gap-y-4">
@@ -118,7 +106,7 @@ export default async function DashboardPage() {
                   }).format(new Date(item.createdAt))}
                 </p>
               </div>
-
+  
               <div className="flex gap-x-4">
                 <Link href={`/dashboard/new/${item.id}`}>
                   <Button variant="outline" size="icon">
@@ -136,4 +124,5 @@ export default async function DashboardPage() {
       )}
     </div>
   );
-}
+
+}; 
