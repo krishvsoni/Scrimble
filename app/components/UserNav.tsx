@@ -17,7 +17,7 @@ import Link from "next/link";
 export const navItems = [
   { name: "Home", href: "/dashboard", icon: Home },
   { name: "Settings", href: "/dashboard/settings", icon: Settings },
-  { name: "Scrimble Premium", href: "/dashboard/billing", icon: CreditCard },
+  { name: "SPremium", href: "/dashboard/billing", icon: CreditCard },
 ];
 
 export function UserNav({
