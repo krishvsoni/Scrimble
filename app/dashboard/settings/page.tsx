@@ -75,9 +75,9 @@ export default async function SettingPage() {
       <Card>
         <form action={postData}>
           <CardHeader>
-            <CardTitle>General Data</CardTitle>
+            <CardTitle>General Information</CardTitle>
             <CardDescription>
-              Please provide general information about yourself. Please don't
+              Edit your profile. Please don't
               forget to save
             </CardDescription>
           </CardHeader>
