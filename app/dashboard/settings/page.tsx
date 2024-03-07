@@ -77,9 +77,10 @@ export default async function SettingPage() {
           <CardHeader>
             <CardTitle>General Information</CardTitle>
             <CardDescription>
-              Edit your profile. Please don't
-              forget to save
+                 Edit your profile. Please don&apos;t
+                forget to save
             </CardDescription>
+
           </CardHeader>
           <CardContent>
             <div className="space-y-2">
