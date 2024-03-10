@@ -16,7 +16,7 @@ model User {
   name             String?
   email            String        @unique
   stripeCustomerId String?       @unique
-  colorScheme      String        @default("theme-orange")
+  colorScheme      String        @default("theme-yellow")
   Subscription     Subscription?
   Notes            Note[]
 }
